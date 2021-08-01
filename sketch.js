@@ -126,9 +126,7 @@ function draw() {
     gameOver.visible = true;
     //Add code to show restart game instrution in text here
     text ("Press Up Arrow to Reset the game!",490,200)
-    if(keyDown("UP_ARROW")){
-      reset();
-    }
+    
   
     path.velocityX = 0;
     mainCyclist.velocityY = 0;
@@ -144,6 +142,9 @@ function draw() {
     redCG.setLifetimeEach(-1);
 
     //write condition for calling reset( )
+  if(keyDown("UP_ARROW")){
+      reset();
+    }
 }
 }
 
